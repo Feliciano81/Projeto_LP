@@ -1,16 +1,56 @@
-body {
-      margin: 0;
-      min-height: 100vh;          /* altura mínima = altura da tela */
-      display: flex;
-      flex-direction: column;     /* organiza header, main, footer em coluna */
-    }
-main{
-    text-align: center;
-    flex: 1;
+/* Estilo do header */
+header {
+  display: flex;                   /* coloca título e nav lado a lado */
+  justify-content: space-between;  /* título à esquerda, menu à direita */
+  align-items: center;             /* centraliza verticalmente */
+  padding: 15px 40px;              /* espaço interno */
+  background-color: #f8f9fa;       /* cor de fundo clara */
+  border-bottom: 1px solid #ddd;   /* linha discreta embaixo */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Título */
+header h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Navegação */
+header nav {
+  display: flex;
+  gap: 20px;                       /* espaço entre links */
+}
+
+/* Links */
+header nav a {
+  text-decoration: none;           /* tira sublinhado */
+  color: #333;                     /* cor neutra */
+  font-weight: 500;
+  transition: color 0.3s ease;     /* efeito suave no hover */
+}
+
+/* Efeito ao passar o mouse */
+header nav a:hover {
+  color: #007bff;                  /* azul profissional */
+}
+
+body 
+{
+  margin: 0;
+  min-height: 100vh;          /* altura mínima = altura da tela */
+  display: flex;
+  flex-direction: column;     /* organiza header, main, footer em coluna */
+}
+
+main
+{
+  text-align: center;
+  flex: 1;
 }
 footer{
-    background: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
